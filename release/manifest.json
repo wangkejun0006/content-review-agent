@@ -1,0 +1,68 @@
+{
+  "schema": "paper-orbit.public-source/1",
+  "directories": [
+    "smart_growth_agent",
+    "frontend/src",
+    "tests",
+    "alembic",
+    "demo",
+    "docs"
+  ],
+  "files": [
+    ".gitignore",
+    ".python-version",
+    ".node-version",
+    "AGENTS.md",
+    "README.md",
+    "LICENSE",
+    "NOTICE.md",
+    "pyproject.toml",
+    "uv.lock",
+    "alembic.ini",
+    "frontend/package.json",
+    "frontend/package-lock.json",
+    "frontend/index.html",
+    "frontend/vite.config.ts",
+    "frontend/tailwind.config.js",
+    "frontend/postcss.config.js",
+    "frontend/eslint.config.js",
+    "frontend/tsconfig.json",
+    "frontend/tsconfig.app.json",
+    "frontend/tsconfig.node.json",
+    "scripts/local_runtime.py",
+    "scripts/offline_demo.py",
+    "scripts/export_release.py",
+    "scripts/audit_release.py",
+    "scripts/offline_e2e.py",
+    "scripts/browser_acceptance.py",
+    "release/manifest.json",
+    ".github/workflows/offline.yml",
+    "release/validation-20261018.json"
+  ],
+  "excluded_parts": [
+    ".git",
+    ".agent",
+    ".runtime",
+    ".venv",
+    "node_modules",
+    "dist",
+    "build",
+    "__pycache__",
+    ".pytest_cache",
+    ".ruff_cache"
+  ],
+  "excluded_suffixes": [
+    ".pyc",
+    ".pyo",
+    ".db",
+    ".sqlite",
+    ".sqlite3",
+    ".pem",
+    ".key",
+    ".log",
+    ".tsbuildinfo"
+  ],
+  "excluded_names": [
+    ".env"
+  ]
+}

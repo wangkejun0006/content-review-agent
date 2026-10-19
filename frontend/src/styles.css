@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    font-family: Inter, "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+    color: #172033;
+    background: #f7f9fc;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  button,
+  input,
+  textarea,
+  select {
+    font: inherit;
+  }
+
+  ::selection {
+    color: #102a56;
+    background: #d9e9ff;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply border border-white/80 bg-white/90 shadow-card backdrop-blur-xl;
+  }
+
+  .field-control {
+    @apply w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-sm text-graphite outline-none transition duration-200 placeholder:text-slate-400 focus:border-brand-500 focus:ring-4 focus:ring-brand-100;
+  }
+
+  .subtle-grid {
+    background-image: radial-gradient(rgba(21, 94, 239, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  .modal-panel {
+    max-height: calc(100vh - 1.5rem);
+  }
+}
+
+@supports (height: 100dvh) {
+  .modal-panel {
+    max-height: calc(100dvh - 1.5rem);
+  }
+}
+
+@media (min-width: 640px) {
+  .modal-panel {
+    max-height: calc(100vh - 4rem);
+  }
+
+  @supports (height: 100dvh) {
+    .modal-panel {
+      max-height: calc(100dvh - 4rem);
+    }
+  }
+}
+
+[data-testid="modal-scroll-area"] {
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  scrollbar-gutter: stable;
+}
+
+.scroll-soft::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-soft::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #cbd5e1;
+}

@@ -1,0 +1,17 @@
+.venv/
+.runtime/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+.agent/ACTIVE_TASK
+.agent/PRIVATE_PROVENANCE.md
+
+.agent/
+release-export.json

@@ -1,0 +1,90 @@
+{
+  "observed_date": "2026-10-18",
+  "evidence_type": "clean_export_offline_fixtures_and_automated_roles",
+  "model_calls": 0,
+  "external_publication": false,
+  "private_runtime_imported": false,
+  "backend": {
+    "passed": 125,
+    "failed": 0
+  },
+  "frontend": {
+    "unit_passed": 17,
+    "lint": "passed",
+    "typescript_and_build": "passed",
+    "non_blocking_warning": "existing production bundle exceeds 500 kB"
+  },
+  "python_lint": "passed",
+  "locked_install": "passed",
+  "dependency_compatibility": "passed",
+  "complex_material_checks": {
+    "sqlite": 21,
+    "postgresql": 21,
+    "all_passed": true
+  },
+  "api_workflow": {
+    "three_candidates": true,
+    "editor_review_denied": true,
+    "substantive_fixed_fixture_rework": true,
+    "fresh_worker_processes": 4,
+    "approval": "ready_for_manual_publish",
+    "fictional_feedback": "succeeded"
+  },
+  "browser_workflow": {
+    "checks": [
+      "UI-created brief and run",
+      "editor has no review action",
+      "substantive fixture rework",
+      "reviewer approval and fresh worker resume",
+      "UI fictional registration and metrics",
+      "UI feedback"
+    ],
+    "page_errors": 0,
+    "failed_requests": 0,
+    "external_requests": 0,
+    "mobile_overflow": false
+  },
+  "restart": {
+    "web_and_database_restarted": true,
+    "same_manifest": true,
+    "reviewed_runs_and_feedback_retained": true
+  },
+  "model_evidence": {
+    "providers": [
+      "development-fake"
+    ],
+    "managed_provider_credentials": 0,
+    "real_budget_file_created": false,
+    "provider_transport_blocked_before_budget": true
+  },
+  "shared_host_components": [
+    "Docker Engine",
+    "package caches",
+    "browser installation"
+  ],
+  "isolated_components": [
+    "source export",
+    "Python virtual environment",
+    "node_modules",
+    "container",
+    "PostgreSQL volume",
+    "instance state",
+    "durable private configuration"
+  ],
+  "postgres_image_digest": "pgvector/pgvector@sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a",
+  "github_actions": "workflow_prepared_not_run_or_pushed",
+  "preserved_failed_attempts": [
+    "API driver expected 201 instead of actual asynchronous 202",
+    "browser card element selector mismatch",
+    "browser response body invalidated by reload",
+    "legacy product image URL returned 404; replaced with fictional inline diagram",
+    "PostgreSQL temporary init server readiness race; fixed authenticated mapped TCP readiness"
+  ],
+  "limitations": [
+    "One fixed rework sentence supported; other feedback requires manual editing and review.",
+    "Fake semantic review and scores are fixtures, not factual correctness or model-quality evidence.",
+    "Reviewer operations are automated role actions, not actual human approval.",
+    "No production deployment, real users, external posting or real business effect evaluated.",
+    "HTTP/provider guards are application controls, not an OS sandbox."
+  ]
+}

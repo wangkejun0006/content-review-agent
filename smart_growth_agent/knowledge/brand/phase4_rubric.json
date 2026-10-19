@@ -1,0 +1,40 @@
+{
+  "stable_key": "xhs_content_score",
+  "verification_status": "verified",
+  "payload": {
+    "name": "虚构文具内容示例量表（不预测流量）",
+    "pass_threshold": 70,
+    "dimensions": [
+      {
+        "name": "Hook",
+        "weight": 20,
+        "criteria": "开场具体且不使用效果保证"
+      },
+      {
+        "name": "Emotion",
+        "weight": 15,
+        "criteria": "语气自然"
+      },
+      {
+        "name": "Authenticity",
+        "weight": 25,
+        "criteria": "事实有来源且不虚构体验"
+      },
+      {
+        "name": "Visual",
+        "weight": 15,
+        "criteria": "画面建议可执行"
+      },
+      {
+        "name": "SaveValue",
+        "weight": 15,
+        "criteria": "提供具体记录场景"
+      },
+      {
+        "name": "Conversion",
+        "weight": 10,
+        "criteria": "温和邀请讨论，不承诺销量"
+      }
+    ]
+  }
+}

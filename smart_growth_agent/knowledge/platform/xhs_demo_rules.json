@@ -1,0 +1,122 @@
+[
+  {
+    "stable_key": "demo-rule-medical",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "health_claim",
+      "rule_text": "虚构演示规则：禁止未经证实的健康或医疗功效。",
+      "severity": "blocker",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-experience",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "content_compliance",
+      "rule_text": "虚构演示规则：禁止虚构第一人称使用体验。",
+      "severity": "blocker",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-absolute",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "content_compliance",
+      "rule_text": "虚构演示规则：禁止无依据的效果保证和绝对化比较。",
+      "severity": "blocker",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-facts",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "content_compliance",
+      "rule_text": "虚构演示规则：冻结 Product 的逐字名称、型号、尺寸、颜色、材料、描述和 features 是允许引用的基础资料事实，不要求每个基础事实另建 Product Claim。不得新增目录里没有的参数或功能。",
+      "severity": "blocker",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-evidence",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "content_compliance",
+      "rule_text": "虚构演示规则：功能效果、比较优势等独立 Product Claim 必须有激活证据链。不得把这一要求扩展成禁止引用冻结 Product 逐字基础事实；合成证据只在本演示内有效。",
+      "severity": "blocker",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-identity",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "content_compliance",
+      "rule_text": "虚构演示规则：品牌官方内容不得冒充独立用户评价。",
+      "severity": "blocker",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-ai",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "ai_content",
+      "rule_text": "虚构演示规则：系统界面统一标注 AI 辅助与虚构资料，正文不必重复免责声明。示意性的拍摄方案不是已发生的用户体验，不能仅因规划了拍摄场景就认定虚构体验。",
+      "severity": "warning",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-privacy",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "content_compliance",
+      "rule_text": "虚构演示规则：禁止写入真实客户、员工、账号或联系方式。",
+      "severity": "blocker",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-promotion",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "recommendation",
+      "rule_text": "虚构演示规则：不承诺传播效果，不自动申请投放或发布。",
+      "severity": "warning",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  },
+  {
+    "stable_key": "demo-rule-uncertainty",
+    "verification_status": "verified",
+    "payload": {
+      "platform": "xhs",
+      "category": "content_compliance",
+      "rule_text": "虚构演示规则：缺少资料应明确说明，不猜测产品细节。",
+      "severity": "warning",
+      "source_url": "https://example.com/fictional-content-rules",
+      "verified_at": "2026-10-15T00:00:00Z"
+    }
+  }
+]
