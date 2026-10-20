@@ -10,7 +10,14 @@
 
 ## 1. 环境与安装
 
-支持 Linux/WSL2；使用 Python 3.12、uv、Node 24/npm、Docker Engine。首次安装依赖和数据库镜像需要网络；运行演示不请求模型供应商。解压发布候选后进入包含本 README 的目录；不要使用作者的旧 `.runtime`、虚拟环境或数据库。
+支持 Linux/WSL2；使用 Python 3.12、uv、Node 24/npm、Docker Engine。首次安装依赖和数据库镜像需要网络；运行演示不请求模型供应商。先克隆仓库并进入目录；不要使用作者的旧 `.runtime`、虚拟环境或数据库。
+
+```bash
+git clone https://github.com/wangkejun0006/content-review-agent.git
+cd content-review-agent
+```
+
+后续命令均在仓库根目录执行。
 
 ```bash
 uv sync --locked --extra dev
@@ -18,7 +25,7 @@ npm ci --prefix frontend --ignore-scripts
 npm run build --prefix frontend
 ```
 
-仅后端流程排练无需 Docker 和前端：
+仅后端流程排练无需 Docker 和前端，只需先完成 `uv sync --locked --extra dev`：
 
 ```bash
 uv run --locked --extra dev python scripts/offline_demo.py \
@@ -98,12 +105,18 @@ uv run --locked --extra dev python scripts/local_runtime.py worker --instance de
 若只想查看完整预制案例，在**新实例**执行 setup 后，先不启动 Worker，运行：
 
 ```bash
+uv run --locked --extra dev python scripts/local_runtime.py setup --instance practice2 --port 8767 --db-port 55434
 uv run --locked --extra dev python scripts/local_runtime.py demo-scenarios --instance practice2 --port 8767 --db-port 55434
+uv run --locked --extra dev python scripts/local_runtime.py serve --instance practice2 --port 8767 --db-port 55434
 ```
+
+打开 http://localhost:8767/login ，用管理员角色查看资料、运行与审核记录。此预制实例不要另外启动 Worker；从零交互练习使用第3节的独立实例。
 
 这条命令直接调用原服务、图和脚本审核员安装固定案例；不代表你从页面手工完成。它保留一个故意不执行的历史快照比较任务，建议与第3节的交互练习使用不同实例。安装中断后保留现场，不自动覆盖或清空。
 
 ## 5. 验证与发布候选
+
+[GitHub Actions 离线验收记录](https://github.com/wangkejun0006/content-review-agent/actions/runs/39191853646)对应提交 `5600712`，覆盖新 PostgreSQL、API、页面返工审核和模拟反馈；后续提交请核对各自的 Actions 结果。
 
 ```bash
 uv run --locked --extra dev pytest -q
